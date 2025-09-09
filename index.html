@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Three Rows with Cards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background: #d84a4a;
+        }
+        .coloumn {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 24px;
+        }
+        .card {
+            background: #e19999;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(183, 198, 224, 0.1);
+            margin: 0 12px;
+            padding: 24px 32px;
+            width: 220px;
+            text-align: center;
+            transition: box-shadow 0.2s;
+        }
+        .card:hover {
+            box-shadow: 0 4px 16px rgba(246, 40, 40, 0.15);
+        }
+        .card-title {
+            font-size: 1.2em;
+            margin-bottom: 12px;
+            color: #333;
+        }
+        .card-content {
+            color: #666;
+            font-size: 0.98em;
+        }
+    </style>
+</head>
+<body>
+    <h1>project</h2>
+    <div class="coloumn">
+        <div class="card">
+            <div class="card-title">Card 1</div>
+            <div class="card-content">pc hardware</div>
+        </div>
+        <div class="card">
+            <div class="card-title">Card 2</div>
+            <div class="card-content">tool</div>
+        </div>
+        <div class="card">
+            <div class="card-title">Card 3</div>
+            <div class="card-content">manual.</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="card">
+            <div class="card-title">Card 4</div>
+            <div class="card-content">internet</div>
+        </div>
+    </div>
+</body>
+</html>

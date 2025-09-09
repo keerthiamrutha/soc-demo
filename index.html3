@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biodata Form</title>
+</head>
+<body>
+  <h2>Biodata Form</h2>
+  <form action="#" method="post">
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="dob">Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob" required><br><br>
+
+    <label for="gender">Gender:</label><br>1
+    
+    <input type="radio" id="male" name="gender" value="Male"> Male
+    <input type="radio" id="female" name="gender" value="Female"> Female
+    <input type="radio" id="other" name="gender" value="Other"> Other
+    <br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone" required><br><br>
+
+    <label for="address">Address:</label><br>
+    <textarea id="address" name="address" rows="3" cols="30"></textarea><br><br>
+
+    <label for="education">Educational Qualification:</label><br>
+    <select id="education" name="education">
+      <option value="10th">10th</option>
+      <option value="12th">12th</option>
+      <option value="graduation">Graduation</option>
+      <option value="post-graduation">Post Graduation</option>
+    </select><br><br>
+
+    <label for="skills">Skills:</label><br>
+    <input type="checkbox" name="skills" value="HTML"> HTML
+    <input type="checkbox" name="skills" value="CSS"> CSS
+    <input type="checkbox" name="skills" value="JavaScript"> JavaScript
+    <input type="checkbox" name="skills" value="Python"> Python
+    <br><br>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </form>
+</body>
+</html>

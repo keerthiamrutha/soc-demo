@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>Bio data </title>
+</head>
+<body>
+    <h1>stongBio Data</h1>
+    <li>Name: keerthy</li>
+    <li>Age: 20</li>                                
+    <li>Occupation: Studying</li>
+    <li>Location: hindupur</li>
+    <li>Hobbies: reading books</li>
+    <li>Skills: HTML, CSS, JavaScript</li>
+    <h2>Educational Qualifications</h2> 
+    <li>Degree: B.Tech in Computer Science</li>
+    <li>College: Srit</li>
+    <li>Year of Graduation: 2024</li>
+    <li>CGPA: 8.5</li>
+    <li> School: narayana school</li>
+    <li>Year of Completion: 2020</li>
+    <li>intermediat:narayana jr clg</li>   
+    <table> 
+        <tr>
+            <th>Subject</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td>Maths</td>
+            <td>95</td>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>English</td>
+            <td>85</td>
+        </tr>
+    </table>
+    <
+   
+
+</body>
+</html> 
