@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Page</title>
+  <style>
+   
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      color: #333;
+    }
+
+    /* Header + Navigation (Flexbox) */
+    header {
+      background: #1766cc;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap; /* allows stacking on small screens */
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 22px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Registration Form (Grid) */
+    .form-container {
+      max-width: 600px;
+      margin: 40px auto;
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 15px;
+    }
+
+    label {
+      font-weight: bold;
+      align-self: center;
+    }
+
+    input, select {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    input:focus, select:focus {
+      border-color: #1766cc;
+      outline: none;
+      box-shadow: 0 0 4px rgba(23, 102, 204, 0.4);
+    }
+
+    /* Radio group layout */
+    .gender-options {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+
+    /* Register button */
+    .btn {
+      grid-column: span 2;
+      padding: 12px;
+      background: #1766cc;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #0f4ea6;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      form {
+        grid-template-columns: 1fr; /* stack labels and inputs */
+      }
+
+      .btn {
+        grid-column: span 1; /* button fits full width */
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with Flexbox -->
+  <header>
+    <h1>My Logo</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Registration Form with CSS Grid -->
+  <div class="form-container">
+    <h2>Student Registration</h2>
+    <form>
+      <!-- Full Name -->
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" placeholder="Enter your full name" required>
+
+      <!-- Email -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <!-- Course Selection -->
+      <label for="course">Select Course:</label>
+      <select id="course" required>
+        <option value="">-- Choose a course --</option>
+        <option value="web">Web Development</option>
+        <option value="ml">Machine Learning</option>
+        <option value="ds">Data Science</option>
+        <option value="uiux">UI/UX Design</option>
+        <option value="cyber">Cyber Security</option>
+        <option value="cloud">Cloud Computing</option>
+      </select>
+
+      <!-- Gender -->
+      <label>Gender:</label>
+      <div class="gender-options">
+        <label><input type="radio" name="gender" value="male"> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+        <label><input type="radio" name="gender" value="other"> Other</label>
+      </div>
+
+      <!-- Password -->
+      <label for="password">Password:</label>
+      <input type="password" id="password" placeholder="Enter password" required>
+
+      <!-- Confirm Password -->
+      <label for="confirm-password">Confirm Password:</label>
+      <input type="password" id="confirm-password" placeholder="Confirm password" required>
+
+      <!-- Register Button -->
+      <button type="submit" class="btn">Register</button>
+    </form>
+  </div>
+
+</body>
+</html>

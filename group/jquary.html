@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Hello jQuery</h1>
+    <h3>Welcome to jQuery   </h3>
+    <div> <h2></h2> </div>
+    <!-- A div to show content -->
+    <div id="content"></div>
+
+    <!-- Button with an ID -->
+    <button id="myButton">Click Me</button>
+    <ul id="list"></ul>
+<button id="add">Add Item</button>
+    <script>
+        $(document).ready(function(){
+            // Change color of content div
+            $("#content").css("color", "black");
+            $("#add").click(function(){
+      $("#list").append("<li>New Item appended from script</li>");
+            });
+         $("#myInput").keydown(function(){
+      let val = $("#myInput").val();
+      $("#output").text(val);
+      if(val){
+        $("#list").append("<li>" + val + "</li>");
+      }
+      })
+    });
+</script>
+</body>
+</html>

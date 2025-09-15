@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #1766cc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .form-container {
+      background: #9dd9f1;
+      padding: 100px;
+      border-radius: 100px;
+      box-shadow: 0 6px 12px rgba(86, 78, 78, 0.15);
+      width: 400px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 15px;
+    }
+
+    .form-grid label {
+      font-weight: bold;
+      color: #555;
+      align-self: center;
+    }
+
+    .form-grid input[type="text"],
+    .form-grid input[type="email"],
+    .form-grid input[type="password"] {
+      padding: 8px;
+      border: 1px solid #2e2929;
+      border-radius: 6px;
+      outline: darkblue;
+    }
+
+    .form-grid input[type="text"]:focus,
+    .form-grid input[type="email"]:focus,
+    .form-grid input[type="password"]:focus {
+      border-color: #444d5f;
+      box-shadow: 1 1 5px rgba(79,140,255,0.4);
+    }
+
+    .form-grid .hobbies,
+    .form-grid .gender {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .submit-btn {
+      grid-column: span 2;
+      padding: 10px;
+      border: none;
+      background: #4f8cff;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+
+    .submit-btn:hover {
+      background: #366de0;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Student Registration</h2>
+    <form>
+      <div class="form-grid">
+        <!-- Name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <!-- Gender -->
+        <label>Gender:</label>
+        <div class="gender">
+          <label><input type="radio" name="gender" value="male"> Male</label>
+          <label><input type="radio" name="gender" value="female"> Female</label>
+          <label><input type="radio" name="gender" value="other"> Other</label>
+        </div>
+
+        <!-- Hobbies -->
+        <label>Hobbies:</label>
+        <div class="hobbies">
+          <label><input type="checkbox" name="hobby" value="sports"> Sports</label>
+          <label><input type="checkbox" name="hobby" value="reading"> Reading</label>
+          <label><input type="checkbox" name="hobby" value="music"> Music</label>
+            <label><input type="checkbox" name="hobby" value="traveling"> Traveling</label>
+            <label><input type="checkbox" name="hobby" value="gaming"> Gaming</label>
+        </div>
+
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter password" required>
+
+        <!-- Submit Button -->
+        <button type="submit" class="submit-btn">submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4 js+kerthy+json</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <h2>weather info fetcher 🌧</h2>
+        <input type="text" id="cityInput" placeholder="Enter city name">
+        <button id="fetchWeatherBtn">Fetch Weather</button>
+        <div id="weatherResult"></div>  
+         <div id="content"></div>
+
+    <!-- Button with an ID -->
+    <button id="myButton">Click Me</button>
+     <script>
+        $(document).ready(function(){
+            // Change color of content div
+            $("#content").css("color", "black");
+
+            // Add click event to button
+            $("#myButton").click(function(){
+              $("#content").text("Button Clicked!");
+              $("#content").toggleClass("highlight");
+            });
+            
+        });
+    </script>
+    </section>
+    <script src="new.js"></script>
+</body>
+</html>

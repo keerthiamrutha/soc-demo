@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Entry</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { font-family: Arial, sans-serif; }
+        h2 { color: #333; }
+        h3 { color: #666; }
+        input { padding: 10px; width: 300px; }
+        button { padding: 10px 15px; margin-left: 10px; }
+        .task-item { margin-bottom: 5px; }
+        
+    </style>
+</head>
+<body>
+      <h2>Hello jQuery </h2>
+  <h3>just for timepass</h3>
+  <button id="btn">Click Me</button>
+    <div class="temp">
+        <p>this is a different division
+            on which we are using the class tags using jquery
+        </p>
+    </div>
+    <input type="text" id="myInput">
+<p id="output">Hi this text</p>
+<ul id="list">
+  <li>Item 1</li>
+    <li>Item 2</li>
+      <li>Item 3</li>
+        <li>Item 4</li>
+          <li>Item 5</li>
+</ul>
+<button id="add">Add Item</button>
+    <h2>Enter a Task</h2>
+    <input type="text" id="task-input" placeholder="Enter task here">
+    <button id="add-task">Add Task</button>
+
+    <div id="task-list"></div>
+
+    <script>
+        $(document).ready(function() {
+            $('#add-task').click(function() {
+                var task = $('#task-input').val().trim();
+                if (task !== '') {
+                    $('#task-list').append('<div class="task-item">' + $('<div>').text(task).html() + '</div>');
+                    $('#task-input').val('');
+                }
+            });
+
+           
+            });
+        
+    </script>
+</body>
+</html>
